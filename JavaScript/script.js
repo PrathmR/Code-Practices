@@ -14,8 +14,17 @@ let sum = printArray.reduce(function(accumulator, val){
     
 },0);
 console.log(sum);
+
 // Find Maximum Number
 // Write a function that returns the maximum number in an array.
+let unsortedArray =[2,15,0,98,67,3,-1];
+
+let sortedArray = unsortedArray.sort(function(a,b){
+    return a-b;  
+});
+let lastElement = sortedArray[sortedArray.length -1]
+
+console.log(lastElement);
 
 // 🟡 Medium
 // Remove Duplicates
