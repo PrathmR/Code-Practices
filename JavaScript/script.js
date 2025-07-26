@@ -1,5 +1,11 @@
+// 🟢Easy
 // Print All Elements
 // Write a function that takes an array of numbers and logs each element to the console.
+let printArray = [1,2,3,4,5,6,7];
+printArray.forEach(function(val){
+    console.log(val);
+});
+
 
 // Sum of Elements
 // Create a function that returns the sum of all numbers in an array.
