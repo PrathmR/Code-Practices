@@ -30,6 +30,26 @@ console.log(lastElement);
 // Remove Duplicates
 // Given an array, return a new array with duplicate values removed.
 // Example: [1,2,2,3] → [1,2,3]
+let duplArray = [1,2,2,3,3,4,6,7,8,8,];
+let uniqArray = []
+
+ for(let i=1; i<duplArray.length; i++){
+    if(i!=uniqArray[i-1]){
+        uniqArray.push(i);
+    }
+}
+console.log(uniqArray);
+
+
+// let newArr = duplArray.forEach(function(val){
+//     if (val != uniqArray[i-1])
+//         {
+//             return uniqArray.push(val);
+//     }
+// })
+
+
+
 
 // Reverse an Array
 // Write a function that takes an array and returns a new array with the elements in reverse order.
