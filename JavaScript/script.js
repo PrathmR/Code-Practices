@@ -30,15 +30,21 @@ console.log(lastElement);
 // Remove Duplicates
 // Given an array, return a new array with duplicate values removed.
 // Example: [1,2,2,3] → [1,2,3]
-let duplArray = [1,2,2,3,3,4,6,7,8,8,];
-let uniqArray = []
+let duplArray = [1, 2, 2, 3, 3, 4, 6, 7, 8, 8, 9, 10, 1, 11, 3, 0];
+let uniqArray = [];
 
- for(let i=1; i<duplArray.length; i++){
-    if(i!=uniqArray[i-1]){
-        uniqArray.push(i);
-    }
+for (let item of duplArray) {
+  // If the unique array does NOT already include the item...
+  if (!uniqArray.includes(item)) {
+    uniqArray.push(item);
+  }
 }
 console.log(uniqArray);
+
+let uniqSorted = uniqArray.sort((a,b) => {
+    return a-b;
+});
+console.log(uniqSorted);
 
 
 // let newArr = duplArray.forEach(function(val){
