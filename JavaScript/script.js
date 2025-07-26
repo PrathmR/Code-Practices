@@ -9,7 +9,11 @@ printArray.forEach(function(val){
 
 // Sum of Elements
 // Create a function that returns the sum of all numbers in an array.
-
+let sum = printArray.reduce(function(accumulator, val){
+    return accumulator+ val;
+    
+},0);
+console.log(sum);
 // Find Maximum Number
 // Write a function that returns the maximum number in an array.
 
