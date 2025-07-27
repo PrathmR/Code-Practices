@@ -73,6 +73,9 @@ console.log(count);
 // Flatten a Nested Array
 // Write a function that flattens a nested array of any depth.
 // Example: [1, [2, [3, [4]]]] → [1, 2, 3, 4]
+let nestedArray =  [1, [2, [3, [4]]]];
+let flattenedArray = nestedArray.flat(Infinity);
+console.log(flattenedArray);
 
 // Find Pair with Target Sum
 // Given an array of numbers and a target sum, return the indices of two numbers that add up to the target.
