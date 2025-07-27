@@ -117,3 +117,21 @@ console.log(gr);
 // Rotate an Array (in-place)
 // Write a function to rotate an array to the right by k steps without using extra space.
 // Example: [1,2,3,4,5], k=2 → [4,5,1,2,3]
+function rotateArray(array, k) {
+  k = k % array.length; // handles cases where k > array length
+
+  reverse(array, 0, array.length - 1);
+  reverse(array, 0, k - 1);
+  reverse(array, k, array.length - 1);
+}
+
+function reverse(array, start, end) {
+  while (start < end) {
+    [array[start], array[end]] = [array[end], array[start]]; // swap
+    start++;
+    end--;
+  }
+}
+const array = [1, 2, 3, 4, 5];
+rotateArray(array, 2);
+console.log(array); 
