@@ -57,6 +57,17 @@ reverseArray(printArray);
 // Count Occurrences
 // Given an array of strings, return an object that shows how many times each string appears.
 // Example: ['apple','banana','apple'] → { apple: 2, banana: 1 }
+let fruits =['apple','banana','apple'];
+let count = {};
+for(let fruit of fruits){
+  if(count[fruit]){
+    count[fruit] +=1;
+  }else{
+    count[fruit] =1;
+  }
+
+}
+console.log(count);
 
 // 🔴 Hard
 // Flatten a Nested Array
