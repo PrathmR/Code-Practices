@@ -96,6 +96,23 @@ findPair([2, 7, 11, 15],9);
 // Group Elements by Type
 // Create a function that groups elements of different types into separate arrays.
 // Example: [1, 'a', true, 2, 'b'] → { number: [1,2], string: ['a','b'], boolean: [true] }
+ function groupByType(arr) {
+  const grouped = {};
+
+  for (let item of arr) {
+    const type = typeof item;
+
+    if (!grouped[type]) {
+      grouped[type] = [];
+    }
+
+    grouped[type].push(item);
+  }
+
+  return grouped;
+}
+let gr = groupByType([1, 'a', true, 2, 'b']);
+console.log(gr);
 
 // Rotate an Array (in-place)
 // Write a function to rotate an array to the right by k steps without using extra space.
