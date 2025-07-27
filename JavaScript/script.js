@@ -81,6 +81,18 @@ console.log(flattenedArray);
 // Given an array of numbers and a target sum, return the indices of two numbers that add up to the target.
 // Example: [2, 7, 11, 15], target = 9 → [0, 1]
 
+function findPair(nums,target){
+  for(let i=0; i<nums.length;i++){
+  for(let k=1; k<nums.length; k++){
+    if (nums[i]+ nums[k]==target){
+      console.log(i,k);
+}
+  }
+}
+}
+findPair([2, 7, 11, 15],9);
+
+
 // Group Elements by Type
 // Create a function that groups elements of different types into separate arrays.
 // Example: [1, 'a', true, 2, 'b'] → { number: [1,2], string: ['a','b'], boolean: [true] }
