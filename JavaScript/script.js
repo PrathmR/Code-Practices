@@ -40,25 +40,19 @@ for (let item of duplArray) {
   }
 }
 console.log(uniqArray);
-
 let uniqSorted = uniqArray.sort((a,b) => {
     return a-b;
 });
 console.log(uniqSorted);
 
 
-// let newArr = duplArray.forEach(function(val){
-//     if (val != uniqArray[i-1])
-//         {
-//             return uniqArray.push(val);
-//     }
-// })
-
-
-
-
 // Reverse an Array
 // Write a function that takes an array and returns a new array with the elements in reverse order.
+let reverseArray = function(Array){
+  let r = Array.reverse();
+  console.log(r);
+}
+reverseArray(printArray);
 
 // Count Occurrences
 // Given an array of strings, return an object that shows how many times each string appears.
